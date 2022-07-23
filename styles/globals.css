@@ -13,8 +13,9 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0);
-  background-image: url(../public/bg.jpeg);
+  background: rgba(47, 17, 93, 0.396);
+  background-image: url('../public/bg.jpeg');
+  /* background-image: url('../media/bg.f3046453.jpeg'); */
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: scroll;

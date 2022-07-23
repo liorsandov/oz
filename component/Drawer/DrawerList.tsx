@@ -12,14 +12,12 @@ import MergeTypeIcon from '@mui/icons-material/MergeType';
 export interface DrawerListProps {
   icon: JSX.Element;
   label: string;
-  link: string
+  link?: string
 }
 
 const data: DrawerListProps[] = [
-  { icon: <AllInclusiveIcon />, label: 'על עצמי בקטנה', link:'/AboutMe'},
-  { icon: <ColorLensIcon />, label: 'רשימת שירים מלאה', link:'/MySong'},
-  // { icon: <MergeTypeIcon />, label: 'הופעות שלי', link:'/AxiosPage'},
-  // { icon: <MergeTypeIcon />, label: 'המלצות', link:'/AxiosPage'}
+  { icon: <AllInclusiveIcon />, label: 'על עצמי בקטנה'},
+  { icon: <ColorLensIcon />, label: 'רשימת שירים מלאה'},
 ]
 
 export default function ListItems() :JSX.Element {
@@ -41,7 +39,7 @@ export default function ListItems() :JSX.Element {
     >
       <Paper elevation={0} sx={{ width: '100%', height: '100%' }}>
         {data.map((item) => (
-          <Link href={item.link} key={item.label} passHref>
+          <Link href={item.link ? item.link : '/'} key={item.label} passHref>
             <ListItemButton
               key={item.label}
               sx={{ py: 0, minHeight: 52, color: 'rgba(255,255,255,.8)' }}
