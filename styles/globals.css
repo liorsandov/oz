@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
+
 html { 
   /* scroll-snap-type: y mandatory; */
   /* font-family: 'Open Sans', sans-serif; */
@@ -14,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(47, 17, 93, 0.396);
-  background-image: url(../public/bg.jpeg);
+  background-image: url('/bg.jpeg');
   /* background-image: url('../media/bg.f3046453.jpeg'); */
   background-size: cover;
   background-repeat: no-repeat;
