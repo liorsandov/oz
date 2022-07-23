@@ -34,14 +34,14 @@ const Home: NextPage = () => {
 						</div>
 						<div className={`${styles.ctaContainer} ${styles.fadeInUp}`}>
 							<div className={styles.cta}>
-								{/* <Link href={'/AboutMe'} key={'item.label'} passHref> */}
+								<Link href={'/AboutMe'} key={'item.label'} passHref>
 									<a>עלי</a>
-								{/* </Link> */}
+								</Link>
 							</div>
 							<div className={styles.cta}>
-								{/* <Link href={'/MySong'} key={'item.label'} passHref> */}
+								<Link href={'/MySong'} key={'item.label'} passHref>
 									<a>שירים שלי</a>
-								{/* </Link> */}
+								</Link>
 							</div>
 						</div>
 					<Info />

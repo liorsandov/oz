@@ -16,8 +16,8 @@ export interface DrawerListProps {
 }
 
 const data: DrawerListProps[] = [
-  { icon: <AllInclusiveIcon />, label: 'על עצמי בקטנה'},
-  { icon: <ColorLensIcon />, label: 'רשימת שירים מלאה'},
+  { icon: <AllInclusiveIcon />, label: 'על עצמי בקטנה', link: '/AboutMe'},
+  { icon: <ColorLensIcon />, label: 'רשימת שירים מלאה', link: '/MySong'},
 ]
 
 export default function ListItems() :JSX.Element {
