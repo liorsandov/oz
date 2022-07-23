@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import TemporaryDrawer from '../component/Drawer'
 import Info from '../component/Info/info'
 import Navbar from '../component/Navbar'
 import styles from '../styles/Home.module.css'
 import ozSing from '../public/oz.jpg';
-import test from '../public/2317968.png';
 import Link from 'next/link'
 
 const Home: NextPage = () => {
