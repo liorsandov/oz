@@ -34,63 +34,67 @@ export default function ButtonAppBar() {
         <>
             <div className={styles.mainNavbar}>
                 <AppBar position="static" sx={{ backgroundColor:'#ffffff00' }}>
-                    <Toolbar sx={{ justifyContent: 'space-between' }}>
-                        <div className={styles.navbarIcons}>
-                            <IconButton>
-                                <a href='https://www.youtube.com/c/OzTiramOfficial' target="_blank">
-                                    <YouTubeIcon />
+                    <Toolbar sx={{ justifyContent: 'space-between', padding: 0 }}>
+                        <div className={styles.navItems}>
+                            <div className={styles.navbarIcons}>
+                                <IconButton>
+                                    <a href='https://www.youtube.com/c/OzTiramOfficial' target="_blank">
+                                        <YouTubeIcon />
+                                    </a>
+                                </IconButton>
+                                {/* <IconButton >
+                                    <div className='tiktok-img'>
+                                        <Image
+                                            src={tiktok}
+                                            alt="Picture of the author"
+                                            width={20}
+                                            height={20}
+                                        />
+                                    </div>
+                                </IconButton> */}
+                                <IconButton>
+                                    <a 
+                                        href='https://www.instagram.com/oztiram/?fbclid=IwAR2atW8XHTG8_0X4ouSm5oHYnNdJFN8mx5HW_ssTCvtFK0SjPjRRwjtYsIY'
+                                        target="_blank"
+                                    >
+                                        <InstagramIcon />
+                                    </a>
+                                </IconButton>
+                                <IconButton>
+                                    <a href='https://www.facebook.com/oz.tiram' target="_blank">
+                                        <FacebookIcon />
+                                    </a>
+                                </IconButton>
+                                <IconButton>
+                                    <a href="https://wa.me/0524563229" target="_blank">
+                                        <WhatsAppIcon />
+                                    </a>
+                                </IconButton>
+                                <IconButton>
+                                <a href='tel:0524563229'>
+                                    <PhoneIcon />
                                 </a>
-                            </IconButton>
-                            {/* <IconButton >
-                                <div className='tiktok-img'>
-                                    <Image
-                                        src={tiktok}
-                                        alt="Picture of the author"
-                                        width={20}
-                                        height={20}
-                                    />
-                                </div>
-                            </IconButton> */}
-                            <IconButton>
-                                <a 
-                                    href='https://www.instagram.com/oztiram/?fbclid=IwAR2atW8XHTG8_0X4ouSm5oHYnNdJFN8mx5HW_ssTCvtFK0SjPjRRwjtYsIY'
-                                    target="_blank"
-                                >
-                                    <InstagramIcon />
-                                </a>
-                            </IconButton>
-                            <IconButton>
-                                <a href='https://www.facebook.com/oz.tiram' target="_blank">
-                                    <FacebookIcon />
-                                </a>
-                            </IconButton>
-                            <IconButton>
-                                <a href="https://wa.me/0524563229" target="_blank">
-                                    <WhatsAppIcon />
-                                </a>
-                            </IconButton>
-                            <IconButton>
-                            <a href='tel:0524563229'>
-                                <PhoneIcon />
-                            </a>
-                            </IconButton>
-                        </div>
-                        <div className={styles.name}>
-                            <div>
-                                <Link href="/">
-                                    עוז תירם
-                                </Link>
+                                </IconButton>
                             </div>
-                            <IconButton
-                                size="large"
-                                edge="start"
-                                color="inherit"
-                                aria-label="menu"
-                                sx={{ mr: 2 }}
-                                onClick={toggleDrawer(true)}
-                            >
-                                <MenuIcon />
-                            </IconButton>
+                            <div className={styles.name}>
+                                <div className={styles.text}>
+                                    <Link href="/">
+                                        עוז תירם
+                                    </Link>
+                                </div>
+                                <div className={styles.cta}>
+                                    <IconButton
+                                        size="large"
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ mr: 2 }}
+                                        onClick={toggleDrawer(true)}
+                                    >
+                                        <MenuIcon />
+                                    </IconButton>
+                                </div>
+                            </div>
                         </div>
                     </Toolbar>
                 </AppBar>

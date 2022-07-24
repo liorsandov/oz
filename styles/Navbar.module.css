@@ -20,8 +20,13 @@
   margin: 0;
 }
 
-.name div {
+.text {
+  text-align: right;
   margin: auto;
+}
+
+.name div {
+  /* margin: auto; */
 }
 
 .tiktok-img img {
@@ -59,4 +64,41 @@
 
 .navbarIcons button{
   color: #fff;
+}
+
+.navbarIcons svg{
+  width: 3rem;
+  height: 2rem;
+}
+.navItems {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+}
+
+.cta {
+  margin: 0;
+}
+
+
+@media (max-width: 650px) {
+  .text {
+    margin-top: 0.3rem;
+  }
+
+  .cta {
+    /* margin: 0; */
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbarIcons {
+    /* width: 70%; */
+  }
+  .navbarIcons svg{
+    width: 2.5rem;
+    /* height: 2rem; */
+  }
 }

@@ -22,6 +22,7 @@ const Home: NextPage = () => {
 				</div>
 				<div className={styles.section} > 
 					<div className={`${styles.sectionFirst}`}>
+
 						<span className={`${styles.sectionFirstTitle} ${styles.lightSpeedIn}`}>
 							עוז תירם
 						</span>
@@ -44,20 +45,13 @@ const Home: NextPage = () => {
 								</Link>
 							</div>
 						</div>
-					<Info />
+					{/* <Info /> */}
 					</div>
 					<div className={`${styles.sectionSeconde}`}>
-						{/* <Info /> */}
+						<Info />
 					</div>
-					<div className={`${styles.sectionTher}`}>
-						{/* <div id="space">
-							<div className={styles.stars}></div>
-							<div className={styles.stars}></div>
-							<div className={styles.stars}></div>
-							<div className={styles.stars}></div>
-							<div className={styles.stars}></div>
-						</div> */}
-					</div>
+					{/* <div className={`${styles.sectionTher}`}>
+					</div> */}
 				</div>
 			</div>
 		</>
