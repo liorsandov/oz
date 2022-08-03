@@ -137,12 +137,12 @@
 
 .cta {
   min-width: 200px;
-  color: #f2a900;
+  color: #ffffff;
   cursor: pointer;
   letter-spacing: 2px;
   display: inline-block;
   padding: 9px 0;
-  border: 1px solid rgba(242,169,0,0.45);
+  border: 1px solid #fff;
 }
 
 .cta+.cta {

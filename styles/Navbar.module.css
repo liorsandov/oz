@@ -3,7 +3,7 @@
   scroll-snap-align: start;
   border-bottom: 0.8px solid #f2a900;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   box-shadow: 0px 2px 4px -1px rgba(255, 255, 255, 0.2), 0px 4px 5px 0px rgba(255, 255, 255, 0.14), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
@@ -29,9 +29,44 @@
   /* margin: auto; */
 }
 
-.tiktok-img img {
+.youtubeImg {
+    /* background-color: #dedede; */
+    border-radius: 1rem;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    /* position: absolute; */
+    color: #fff;
+}
+
+.youtubeImg img {
   filter: grayscale(10%);
   width: 100px;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  left: 8px;
+  top: 3px;
+}
+
+.tiktokImg {
+    /* background-color: #dedede; */
+    border-radius: 1rem;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    /* position: absolute; */
+    color: #fff;
+}
+
+.tiktokImg img {
+  filter: grayscale(10%);
+  width: 100px;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 8px;
+  top: 7px;
 }
 
 .name button {
@@ -62,8 +97,15 @@
     color: white;
 }
 
-.navbarIcons button{
+.navbarIcons {
+  text-align: center;
+  width: 100%;
+}
+
+.navbarIcons button {
   color: #fff;
+  max-width: 64px;
+  width: 100%;
 }
 
 .navbarIcons svg{
@@ -74,6 +116,7 @@
   display: flex;
   flex-direction: column-reverse;
   margin: auto;
+  width: 100%;
 }
 
 .cta {

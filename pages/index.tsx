@@ -22,7 +22,6 @@ const Home: NextPage = () => {
 				</div>
 				<div className={styles.section} > 
 					<div className={`${styles.sectionFirst}`}>
-
 						<span className={`${styles.sectionFirstTitle} ${styles.lightSpeedIn}`}>
 							עוז תירם
 						</span>

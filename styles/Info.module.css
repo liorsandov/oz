@@ -66,7 +66,7 @@
   border-width: 1px;
   width: 150px;
   height: 150px;
-  border-color: #f2a900;
+  border-color: #ffffff;
   z-index: 99999;
   border-style: solid;
   border-radius: 100%;
@@ -74,11 +74,25 @@
   display: flex;
 }
 
+.tContent svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.tContent button {
+  margin: auto;
+  color: #fff;
+}
+
+.tContent a {
+  margin-top: 1.5rem;
+}
+
 .ts {
   border-width: 1px;
   width: 150px;
   height: 150px;
-  border-color: #f2a900;
+  border-color: #ffffff;
   z-index: 99999;
   border-style: solid;
   border-radius: 100%;

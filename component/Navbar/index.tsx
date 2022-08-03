@@ -11,7 +11,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Image from 'next/image'
-import tiktok from '../../public/tiktok-brands.svg';
+import tiktok from '../../public/tik-tok.png';
 import { Drawer } from '@mui/material';
 import DrawerList from '../Drawer/DrawerList';
 import Link from 'next/link';
@@ -38,20 +38,10 @@ export default function ButtonAppBar() {
                         <div className={styles.navItems}>
                             <div className={styles.navbarIcons}>
                                 <IconButton>
-                                    <a href='https://www.youtube.com/c/OzTiramOfficial' target="_blank">
-                                        <YouTubeIcon />
+                                    <a href='https://www.facebook.com/oz.tiram' target="_blank">
+                                        <FacebookIcon />
                                     </a>
                                 </IconButton>
-                                {/* <IconButton >
-                                    <div className='tiktok-img'>
-                                        <Image
-                                            src={tiktok}
-                                            alt="Picture of the author"
-                                            width={20}
-                                            height={20}
-                                        />
-                                    </div>
-                                </IconButton> */}
                                 <IconButton>
                                     <a 
                                         href='https://www.instagram.com/oztiram/?fbclid=IwAR2atW8XHTG8_0X4ouSm5oHYnNdJFN8mx5HW_ssTCvtFK0SjPjRRwjtYsIY'
@@ -60,20 +50,43 @@ export default function ButtonAppBar() {
                                         <InstagramIcon />
                                     </a>
                                 </IconButton>
+                                <IconButton >
+                                    <div className={styles.tiktokImg}>
+                                        <img
+                                            src="tik-tok-n.png"
+                                            alt="Picture of the author"
+                                        />
+                                    </div>
+                                </IconButton>
                                 <IconButton>
-                                    <a href='https://www.facebook.com/oz.tiram' target="_blank">
-                                        <FacebookIcon />
+                                    <a href='https://www.youtube.com/c/OzTiramOfficial' target="_blank">
+                                        <div className={styles.youtubeImg}>
+                                            <img
+                                                src="youtube-n.png"
+                                                alt="Picture of the author"
+                                            />
+                                        </div>
                                     </a>
                                 </IconButton>
                                 <IconButton>
-                                    <a href="https://wa.me/0524563229" target="_blank">
+                                    <a href="https://wa.me/0544736161" target="_blank">
                                         <WhatsAppIcon />
                                     </a>
                                 </IconButton>
                                 <IconButton>
-                                <a href='tel:0524563229'>
-                                    <PhoneIcon />
-                                </a>
+                                    <a href='tel:0544736161'>
+                                        <PhoneIcon />
+                                    </a>
+                                </IconButton>
+                                <IconButton
+                                        size="large"
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ mr: 2 }}
+                                        onClick={toggleDrawer(true)}
+                                    >
+                                        <MenuIcon />
                                 </IconButton>
                             </div>
                             <div className={styles.name}>
@@ -82,7 +95,7 @@ export default function ButtonAppBar() {
                                         עוז תירם
                                     </Link>
                                 </div>
-                                <div className={styles.cta}>
+                                {/* <div className={styles.cta}>
                                     <IconButton
                                         size="large"
                                         edge="start"
@@ -93,7 +106,7 @@ export default function ButtonAppBar() {
                                     >
                                         <MenuIcon />
                                     </IconButton>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </Toolbar>
