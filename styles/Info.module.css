@@ -18,7 +18,7 @@
 
 .mainContent {
   max-width: 1400px;
-  min-height: 250px;
+  /* min-height: 250px; */
   width: 100%;
   display: flex;
   border-style: solid;
@@ -72,6 +72,7 @@
   border-radius: 100%;
   margin: auto;
   display: flex;
+
 }
 
 .tContent svg {
@@ -123,6 +124,42 @@
 }
 
 
+.fadeInUp {
+  display: flex;
+  width: 100%;
+
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+} 
+
 
 .fadeInDown {
   /* margin-top: 4rem; */
@@ -160,9 +197,6 @@
   }
   }  
 
-
-
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -173,8 +207,11 @@
 
 @media (max-width: 460px) {
   .tContent {
-    flex-direction: column;
+    flex-direction: row;
     height: 350px;
-    width: 85%;
+    min-height: auto;
+    height: auto;
+    padding: 1rem;
+    width: 100%;
   }
 }

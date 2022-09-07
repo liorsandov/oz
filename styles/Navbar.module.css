@@ -85,6 +85,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-size: 2.6rem;
 }
   
 .topnav a:hover {
@@ -100,12 +101,29 @@
 .navbarIcons {
   text-align: center;
   width: 100%;
+
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
 .navbarIcons button {
   color: #fff;
   max-width: 64px;
   width: 100%;
+
+  color: #fff;
+  /* max-width: 64px; */
+  width: 100%;
+  margin: 0;
+  max-width: 60px;
+  align-self: center;
+  height: 100%;
+  max-height: 53px;
+
 }
 
 .navbarIcons svg{
@@ -121,6 +139,10 @@
 
 .cta {
   margin: 0;
+}
+
+.name .text span {
+  font-size: 2.6rem;
 }
 
 

@@ -17,14 +17,14 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.mainBody}>
-				<div className={styles.navbar}>
+				<div className={`${styles.navbar} ${styles.fadeIn}`}>
 					<Navbar />
 				</div>
 				<div className={styles.section} > 
 					<div className={`${styles.sectionFirst}`}>
-						<span className={`${styles.sectionFirstTitle} ${styles.lightSpeedIn}`}>
+						{/* <span className={`${styles.sectionFirstTitle} ${styles.lightSpeedIn}`}>
 							עוז תירם
-						</span>
+						</span> */}
 						<div className={`${styles.imageContainer} ${styles.fadeIn}`}>
 							<img
 								src="oz.jpg"
@@ -35,15 +35,20 @@ const Home: NextPage = () => {
 						<div className={`${styles.ctaContainer} ${styles.fadeInUp}`}>
 							<div className={styles.cta}>
 								<Link href={'/AboutMe'} key={'item.label'} passHref>
-									<a>עלי</a>
+									<div className={styles.ctaInnerText}>
+										<a>על עצמי</a>
+									</div>
 								</Link>
 							</div>
 							<div className={styles.cta}>
 								<Link href={'/MySong'} key={'item.label'} passHref>
-									<a>שירים שלי</a>
+									<a>רשימת השירים המומלצים שלי</a>
 								</Link>
 							</div>
 						</div>
+						{/* <div className={`${styles.fadeInUp}`}> */}
+						<Info />
+						{/* </div> */}
 					{/* <Info /> */}
 					</div>
 					<div className={`${styles.sectionSeconde}`}>

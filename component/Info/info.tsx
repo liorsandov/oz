@@ -7,7 +7,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 export default function Info(): JSX.Element {
 	return (
 		<>
-			<div className={styles.fadeInDown}>
+			{/* <div className={styles.fadeInDown}> */}
+			<div className={styles.fadeInUp}>
 				<div className={styles.tContent}>
 					<div className={styles.tf}>
 						<a href="https://wa.me/0544736161" target="_blank">

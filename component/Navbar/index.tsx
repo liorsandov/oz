@@ -68,16 +68,6 @@ export default function ButtonAppBar() {
                                         </div>
                                     </a>
                                 </IconButton>
-                                <IconButton>
-                                    <a href="https://wa.me/0544736161" target="_blank">
-                                        <WhatsAppIcon />
-                                    </a>
-                                </IconButton>
-                                <IconButton>
-                                    <a href='tel:0544736161'>
-                                        <PhoneIcon />
-                                    </a>
-                                </IconButton>
                                 <IconButton
                                         size="large"
                                         edge="start"
@@ -92,21 +82,11 @@ export default function ButtonAppBar() {
                             <div className={styles.name}>
                                 <div className={styles.text}>
                                     <Link href="/">
-                                        עוז תירם
+                                        <span>
+                                            oz tiram - עוז תירם
+                                        </span>
                                     </Link>
                                 </div>
-                                {/* <div className={styles.cta}>
-                                    <IconButton
-                                        size="large"
-                                        edge="start"
-                                        color="inherit"
-                                        aria-label="menu"
-                                        sx={{ mr: 2 }}
-                                        onClick={toggleDrawer(true)}
-                                    >
-                                        <MenuIcon />
-                                    </IconButton>
-                                </div> */}
                             </div>
                         </div>
                     </Toolbar>
