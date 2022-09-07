@@ -52,10 +52,15 @@ export default function ButtonAppBar() {
                                 </IconButton>
                                 <IconButton >
                                     <div className={styles.tiktokImg}>
+                                    <a 
+                                        href='https://www.tiktok.com/@oztiram?_t=8VUXQfa5cUk&_r=1'
+                                        target="_blank"
+                                    >
                                         <img
                                             src="tik-tok-n.png"
                                             alt="Picture of the author"
                                         />
+                                        </a>
                                     </div>
                                 </IconButton>
                                 <IconButton>

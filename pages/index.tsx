@@ -51,9 +51,9 @@ const Home: NextPage = () => {
 						{/* </div> */}
 					{/* <Info /> */}
 					</div>
-					<div className={`${styles.sectionSeconde}`}>
+					{/* <div className={`${styles.sectionSeconde}`}>
 						<Info />
-					</div>
+					</div> */}
 					{/* <div className={`${styles.sectionTher}`}>
 					</div> */}
 				</div>

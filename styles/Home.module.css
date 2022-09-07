@@ -89,6 +89,7 @@
 
 
 .mainBody {
+  height: 100vh;
 }
 
 .section {
@@ -125,7 +126,8 @@
   /* max-width: 480px; */
   width: 100%;
   margin: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
+
 }
 
 .imageOz {
@@ -155,6 +157,17 @@
 .cta:hover {
   background-color: #fff;
   color: #000;
+}
+
+@media (max-width: 720px) {
+  .sectionFirst {
+    /* height: 96%; */
+    /* scroll-snap-align: center; */
+    /* display: flex; */
+    /* justify-content: unset; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+  }
 }
 
 @media (max-width: 557px) {

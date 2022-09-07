@@ -11,10 +11,11 @@ export default function Info(): JSX.Element {
 			<div className={styles.fadeInUp}>
 				<div className={styles.tContent}>
 					<div className={styles.tf}>
-						<a href="https://wa.me/0544736161" target="_blank">
-							<div>
+						{/* <a href="https://wa.me/0544736161" target="_blank"> */}
+						<a href="https://wa.me/0544736161">
+							<div className={styles.tsInner}>
 								<span className={styles.tfText}>
-									שלח הודעה
+									לשליחת הודעה
 								</span>
 								<IconButton>
 									<WhatsAppIcon />
@@ -24,9 +25,9 @@ export default function Info(): JSX.Element {
 					</div>
 					<div className={styles.ts}>
 						<a href='tel:0544736161'>
-							<div>
+							<div className={styles.tsInner}>
 								<span className={styles.tsText}>
-									שלח הודעה
+									לחיוג
 								</span>
 								<IconButton>
 									<PhoneIcon />
